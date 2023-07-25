@@ -37,7 +37,9 @@ services:
     command: >
         bash -c "npm install &&
         npm install nodemon -g &&
-        nodemon ../src/test.js"
+        npm install express-generator &&
+        npm install ejs &&
+        nodemon app.js"
     depends_on:
      - mysql
 
