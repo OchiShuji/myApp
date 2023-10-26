@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS myapp;
+CREATE DATABASE myapp;
+
+USE myapp;
+
+DROP TABLE IF EXISTS items;
+CREATE TABLE items (
+    id INT NOT NULL,
+    nm VARCHAR(100) NOT NULL,
+    PRIMARY KEY(id)
+);

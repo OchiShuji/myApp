@@ -1,17 +1,15 @@
 const express = require('express');
 const app = express();
 
-/*
 const mysql = require('mysql');
 const connection = mysql.createConnection({
     host:'localhost',
-    user:'listapp',
-    password:'listapp',
-    database:'list_app'
+    user:'root',
+    password:'root',
+    database:'myapp'
 });
-*/
 
-/*
+
 connection.connect((err) => {
     if (err) {
       console.log('error connecting: ' + err.stack);
@@ -20,7 +18,7 @@ connection.connect((err) => {
     console.log('success');
   });
 
-*/
+
 
 app.use(express.static('public'));
 app.get('/', (req,res) => {
@@ -29,7 +27,7 @@ app.get('/', (req,res) => {
 
 app.use(express.urlencoded({extended: false}));
 
-/*
+
 app.get('/index', (req,res) => {
     connection.query(
         'SELECT * FROM items',
@@ -66,7 +64,7 @@ app.post('/delete/:id', (req,res) => {
         }
     );
 });
-*/
+
 port = 3000;
 app.listen(port, ()=>{
     console.log('listen:' + port);

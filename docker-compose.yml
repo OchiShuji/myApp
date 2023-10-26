@@ -6,10 +6,9 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: db
-      MYSQL_USER: myApp
-      MYSQL_PASSWORD: 5656myApp2023
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     restart: always
     networks:
       - backend
@@ -17,6 +16,10 @@ services:
       - ./mysql/conf:/etc/mysql/conf.d/:ro
       - mysqldata:/var/lib/mysql
       - ./mysql/logs:/var/log/mysql
+      - ./mysql/conf/initdb.d/:/docker-entrypoint-initdb.d/
+    env_file:
+      - .env
+
 
   web:
     image: node:latest
@@ -30,7 +33,7 @@ services:
       - backend
     tty: true
     ports:
-     - "3000:3000"
+     - "8080:3000"
     volumes:
      - ./web:/app
     working_dir: /app
@@ -39,6 +42,7 @@ services:
         npm install nodemon -g &&
         npm install express-generator &&
         npm install ejs &&
+        npm install mysql &&
         nodemon app.js"
     depends_on:
      - mysql
