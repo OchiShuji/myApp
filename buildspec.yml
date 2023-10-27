@@ -11,4 +11,5 @@ phases:
       - npm install express-generator
       - npm install ejs
       - npm install mysql
+      - npm install express
       - node ./web/app.js
