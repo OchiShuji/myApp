@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  build:
+    commands:
+      - npm install
+      - npm install nodemon -g
+      - npm install express-generator
+      - npm install ejs
+      - npm install mysql
