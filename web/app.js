@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+/*
 const mysql = require('mysql');
 const connection = mysql.createConnection({
     host:'localhost',
@@ -8,6 +9,7 @@ const connection = mysql.createConnection({
     password:'root',
     database:'myapp'
 });
+*/
 
 
 connection.connect((err) => {
@@ -27,7 +29,7 @@ app.get('/', (req,res) => {
 
 app.use(express.urlencoded({extended: false}));
 
-
+/*
 app.get('/index', (req,res) => {
     connection.query(
         'SELECT * FROM items',
@@ -36,6 +38,7 @@ app.get('/index', (req,res) => {
         }
     );
 });
+*/
 
 app.get('/new', (req,res) => {
     res.render('new.ejs');
@@ -45,6 +48,7 @@ app.get('/edit/:id', (req,res) => {
     res.render('edit.ejs');
 });
 
+/*
 app.post('/create', (req,res) => {
     connection.query(
         'INSERT INTO items(name) VALUES (?)',
@@ -64,6 +68,7 @@ app.post('/delete/:id', (req,res) => {
         }
     );
 });
+*/
 
 port = 3000;
 app.listen(port, ()=>{
