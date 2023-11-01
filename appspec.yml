@@ -1,5 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: ./web/app.js
-    destination: /var/www/html/
+  - source: /
+    destination: /myApp
+hooks:
+  AfterInstall:
+    - location: /myApp/start.sh
+      timeout: 300
+      runas: root
