@@ -5,6 +5,6 @@ files:
     destination: /myApp
 hooks:
   AfterInstall:
-    - location: ./myApp/start.sh
+    - location: hooks/start.sh
       timeout: 300
       runas: root

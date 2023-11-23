@@ -1,1 +1,0 @@
-node /myApp/web/app.js
