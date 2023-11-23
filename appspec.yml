@@ -7,4 +7,4 @@ hooks:
   AfterInstall:
     - location: hooks/start.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
