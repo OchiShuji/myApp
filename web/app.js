@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
 });
 */
 
-
+/*
 connection.connect((err) => {
     if (err) {
       console.log('error connecting: ' + err.stack);
@@ -19,7 +19,7 @@ connection.connect((err) => {
     }
     console.log('success');
   });
-
+*/
 
 
 app.use(express.static('public'));

@@ -1,6 +1,14 @@
 cd /myApp/web
 echo `pwd`
-node ./app.js >> "/var/log/myApplog_`date`.log" 2>&1
+
+LPATH="../log/myApplog_`date`.log"
+cat $LPATH >> /dev/null 2>&1
+
+if [ $? -ne 0]; then
+touch $LPATH
+fi
+
+node ./app.js >> "../log/myApplog_`date`.log" 2>&1
 
 if [ $? -ne 0 ]; then
 echo "error"
