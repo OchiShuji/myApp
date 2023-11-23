@@ -13,5 +13,4 @@ phases:
       - npm install express
 artifacts:
   files:
-    - appspec.yml
-    - ./web/*
+    - '**/*'
