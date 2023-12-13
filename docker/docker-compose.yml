@@ -18,32 +18,35 @@ services:
       - ./mysql/logs:/var/log/mysql
       - ./mysql/conf/initdb.d/:/docker-entrypoint-initdb.d/
     env_file:
-      - .env
-
+     - .env
 
   web:
     image: node:latest
     environment:
-      - MYSQL_SERVER=mysql
-      - MYSQL_USER=myApp
-      - MYSQL_PASSWORD=5656myApp2023
-      - MYSQL_DATABASE=db
-      - CHOKIDAR_USEPOLLING=true
+      MYSQL_SERVER: mysql
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      PORT: ${PORT}
     networks:
       - backend
     tty: true
     ports:
-     - "8080:3000"
+      - "8080:3000"
     volumes:
-     - ./web:/app
+      - ./web:/app
     working_dir: /app
     command: >
         bash -c "npm install &&
         npm install nodemon -g &&
         npm install express-generator &&
         npm install ejs &&
-        npm install mysql &&
+        npm install mysql2 &&
+        npm install dotenv &&
+        npm install process &&
         nodemon app.js"
+    env_file:
+     - .env
     depends_on:
      - mysql
 

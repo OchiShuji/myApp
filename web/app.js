@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 
-/*
+const process = require('process');
+
 const mysql = require('mysql');
 const connection = mysql.createConnection({
     host:'localhost',
@@ -9,7 +10,7 @@ const connection = mysql.createConnection({
     password:'root',
     database:'myapp'
 });
-*/
+
 
 /*
 connection.connect((err) => {

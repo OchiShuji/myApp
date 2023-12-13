@@ -1,0 +1,33 @@
+2023-12-10T11:01:35.271Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:02:24.095Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:03:23.931Z: Error: connect ECONNREFUSED 127.0.0.1:3306
+2023-12-10T11:03:25.688Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:03:47.450Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:07:32.372Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:07:34.487Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:07:36.627Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:08:08.694Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:08:35.857Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:09:15.169Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:09:21.754Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:11:03.336Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:11:05.912Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:11:08.320Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:12:32.864Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:12:38.512Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:12:38.689Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:12:40.773Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:12:43.889Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:12:46.760Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:13:17.925Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:13:19.952Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:14:18.951Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:14:19.381Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:14:19.992Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:14:22.238Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:14:25.574Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:15:06.533Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-10T11:15:07.022Z: Error: Can't add new command when connection is in closed state
+2023-12-10T11:15:13.880Z: Error: Can't add new command when connection is in closed state
+2023-12-13T10:55:59.319Z: Error: getaddrinfo ENOTFOUND mysql
+2023-12-13T10:56:00.607Z: Error: Can't add new command when connection is in closed state
